@@ -3,10 +3,10 @@ import React from "react";
 
 class Welcome extends Component {
     render(){
+        const {name, hero} = this.props
         return (
             <div>
-                <h1>{this.props.name}</h1>
-                {this.props.children}
+                <h1>{name} aka {hero}</h1>
             </div>
         )
     }
