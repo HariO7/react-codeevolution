@@ -10,14 +10,14 @@ export class UserDisplay extends Component {
   }
     render() {
 
-return this.state.isLoggedIn && <div>Welcome Hari</div>
+// return this.state.isLoggedIn && <div>Welcome Hari</div>
 
-        // return(
-        //     <div>
-        //         {this.state.isLoggedIn ? (<div><h1>Welcome master Bruce</h1></div>):
-        //         (<div><h1>Welcome Alfred</h1></div>)}
-        //     </div>
-        // )
+        return(
+            <div>
+                {this.state.isLoggedIn ? (<div><h1>Welcome master Bruce</h1></div>):
+                (<div><h1>Welcome Alfred</h1></div>)}
+            </div>
+        )
 
     //   if(this.state.isLoggedIn){
     //       return(<div><h1>Welcome master Bruce</h1></div>)
