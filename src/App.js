@@ -6,6 +6,7 @@ import Welcome from './Components/welcome';
 import FunctionClick from './Components/functionClick';
 import ClassClicked from './Components/classClicked';
 import ClickBinding from './Components/ClickBinding';
+import Parent from './Components/Parent';
 function App() {
   return (
     <div>
@@ -13,7 +14,8 @@ function App() {
       <Welcome name="micheal" hero= "jackson" /> */}
       {/* <FunctionClick />
       <ClassClicked /> */}
-      <ClickBinding />
+      {/* <ClickBinding /> */}
+      <Parent/>
 
     </div>
   );
