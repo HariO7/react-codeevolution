@@ -1,26 +1,26 @@
-import React, { Component } from 'react'
-import Child from './Child'
+import React, { Component } from "react";
+import Child from "./Child";
 
-export class Parent extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         parent: 'jamie'
-      }
-    //   this.handleGreet = this.handleGreet.bind(this)
+class Parent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      Parent: "Ziyaf",
     }
-    handleGreet = ()=> {
-        alert(`hello ${this.state.parent}`)
+    this.greetParent = this.greetParent.bind(this)
+}   
+
+
+    greetParent(childName){
+        alert(`hello ${this.state.Parent} of ${childName}`)
     }
 
   render() {
-    return (
-      <div>
-          <Child handleGreet = {this.handleGreet} />
-      </div>
-    )
+    return <div>
+        <Child handleGreet = {this.greetParent} />
+    </div>;
   }
 }
 
-export default Parent
+export default Parent;
