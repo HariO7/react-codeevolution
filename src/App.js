@@ -1,13 +1,11 @@
 import './App.css';
-import Form from './Components/Form';
-import LifeCycleA from './Components/LifeCycleA';
+import Table from './Components/Table';
 
 
 function App() {
   return (
     <div>
-      <Form />
-      <LifeCycleA />
+      <Table />
     </div>
   );
 }
