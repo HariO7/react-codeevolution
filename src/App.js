@@ -1,11 +1,11 @@
 import './App.css';
-import ParentComp from './Components/ParentComp';
+import PortalDemo from './Components/PortalDemo';
 
 
 function App() {
   return (
     <div>
-     {/* <ParentComp /> */}
+      <PortalDemo />
     </div>
   );
 }
