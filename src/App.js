@@ -1,11 +1,20 @@
 import './App.css';
-import PortalDemo from './Components/PortalDemo';
+import ErrorBoundary from './Components/ErrorBoundary';
+import Hero from './Components/Hero';
 
 
 function App() {
   return (
     <div>
-      <PortalDemo />
+      <ErrorBoundary >
+    <Hero heroName= "Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+    <Hero heroName= 'superman' />  
+      </ErrorBoundary>
+      <ErrorBoundary>
+    <Hero heroName= 'joker' />  
+      </ErrorBoundary>
     </div>
   );
 }
