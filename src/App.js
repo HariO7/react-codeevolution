@@ -1,12 +1,13 @@
 import './App.css';
-import ClickCounter from './Components/ClickCounter';
-import Hovered from './Components/Hovered';
+import CompC from './Components/CompC';
+import { UserProvider } from './Components/Context';
 
 function App() {
   return (
     <div>
-     <ClickCounter />
-     <Hovered />
+      <UserProvider value={["batman","123"]}>
+      <CompC />
+      </UserProvider>
     </div>
   );
 }
