@@ -1,13 +1,11 @@
 import './App.css';
-import CompC from './Components/CompC';
-import { UserProvider } from './Components/Context';
+import PostLists from './Components/PostLists';
+
 
 function App() {
   return (
     <div>
-      <UserProvider value={["batman","123"]}>
-      <CompC />
-      </UserProvider>
+      <PostLists />
     </div>
   );
 }
